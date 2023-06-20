@@ -1,0 +1,161 @@
+.clear {
+    clear: both;
+}
+
+* {
+    font-family: 'Merriweather', serif;
+    margin: 0px;
+}
+
+div>h3 {
+    color: red;
+    border: 2px black bottom solid;
+    background: cyan;
+    padding-top: 10px;
+    border-radius: 5px;
+    margin: 0px;
+
+}
+
+footer {
+    background-color: cadetblue;
+    height: 8%;
+}
+
+h2 {
+    margin-top: 0%;
+    padding: 0px;
+}
+
+.material-symbols-outlined {
+    padding-bottom: 10px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 48
+
+}
+
+h3:hover {
+    text-transform: uppercase;
+
+}
+
+div:hover {
+    background-color: rgb(205, 233, 105);
+
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    text-align: left;
+    margin-top: 5px;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-transform: uppercase;
+
+}
+
+h2 {
+    background-color: chocolate;
+}
+
+.cent {
+    text-align: center;
+}
+
+span {
+    background-color: aquamarine;
+    width: 100%;
+}
+
+.offset {
+    margin-top: 0;
+    padding-top: 200px;
+   
+    text-align: center;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 200px;
+    font-weight: bold;
+    text-align: center;
+    background: gold;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.header.small {
+    height: 70px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.header.small~.offset {
+    padding-top: 140px;
+}
+
+.header.small .header_logo {
+    padding-top: 20px;
+    font-size: 20px;
+    text-shadow: none;
+}
+
+.header_logo {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding-top: 60px;
+    font-size: 50px;
+    text-shadow: 3px 4px rgba(0, 0, 0, 0.1);
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+@media screen and (min-width:701px) {
+    .flexbox2 {
+        box-sizing: border-box;
+        border: 2px solid greenyellow;
+        margin: 3px;
+        text-align: center;
+        border-radius: 10px;
+        width: 48%;
+        margin: 1%;
+        float: left;
+        height: auto;
+
+    }
+
+    .main {
+        width: 100%;
+        margin: 3px both;
+        flex-direction: row;
+        grid-template-columns: repeat(auto-fit, minmax(200px, lfr));
+
+    }
+}
+
+@media screen and (max-width : 700px) {
+    .flexbox2 {
+        width: 98%;
+        margin: 1%;
+        float: none;
+        box-sizing: content-box;
+        display: block;
+        border: 2px solid greenyellow;
+
+    }
+
+    .main {
+        width: 100%;
+    }
+}
